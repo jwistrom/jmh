@@ -1,0 +1,7 @@
+### intellij
+**/*.iml
+**/.idea/
+
+### maven
+**/target/
+**/.flattened-pom.xml

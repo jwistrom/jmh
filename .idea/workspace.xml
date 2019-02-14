@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ac35181-b763-40f2-8f88-c460d7bd6576" name="Default Changelist" comment="" />
+    <list default="true" id="3ac35181-b763-40f2-8f88-c460d7bd6576" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/BenchmarkList" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/BenchmarkList" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CompilerHints" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/CompilerHints" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/For.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/For.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/LambdaOrMethodReference.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/LambdaOrMethodReference.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/For_jmhType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/For_jmhType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/For_jmhType_B1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/For_jmhType_B1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/For_jmhType_B2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/For_jmhType_B2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/For_jmhType_B3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/For_jmhType_B3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/For_sumByForLoop_jmhTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/For_sumByForLoop_jmhTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/For_sumByStream_jmhTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/For_sumByStream_jmhTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/For_sumByWhile_jmhTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/For_sumByWhile_jmhTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/LambdaOrMethodReference_jmhType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/LambdaOrMethodReference_jmhType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/LambdaOrMethodReference_jmhType_B1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/LambdaOrMethodReference_jmhType_B1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/LambdaOrMethodReference_jmhType_B2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/LambdaOrMethodReference_jmhType_B2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/LambdaOrMethodReference_jmhType_B3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/LambdaOrMethodReference_jmhType_B3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/LambdaOrMethodReference_mapByLambda_jmhTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/LambdaOrMethodReference_mapByLambda_jmhTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/LambdaOrMethodReference_mapByMethodReferenceInlined_jmhTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/LambdaOrMethodReference_mapByMethodReferenceInlined_jmhTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/LambdaOrMethodReference_mapByMethodReferenceNotInlined_jmhTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pricerunner/jmh/generated/LambdaOrMethodReference_mapByMethodReferenceNotInlined_jmhTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,14 +53,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="12" />
+          <entry key="class" value="17" />
+          <entry key="gitignore" value="1" />
           <entry key="java" value="3" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="12" />
+          <entry key="CLASS" value="17" />
           <entry key="JAVA" value="3" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -46,31 +72,31 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pricerunner/jmh/LambdaOrMethodReference.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="735">
+              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
             </state>
           </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pricerunner/jmh/LambdaOrMethodReference.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="53" column="49" lean-forward="true" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/openjdk/jmh/jmh-core/1.21/jmh-core-1.21.jar!/org/openjdk/jmh/infra/Blackhole.class">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="510">
+              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
             </state>
           </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
     </leaf>
@@ -82,12 +108,16 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/pricerunner/jmh/For.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/pricerunner/jmh/LambdaOrMethodReference.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -110,6 +140,7 @@
     <option name="width" value="2294" />
     <option name="height" value="1417" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -121,67 +152,6 @@
           <expand>
             <path>
               <item name="jmh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jmh" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jmh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jmh" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jmh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jmh" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jmh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jmh" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jmh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jmh" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jmh" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jmh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jmh" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jmh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jmh" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jmh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jmh" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jmh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jmh" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="pricerunner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jmh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jmh" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="pricerunner" type="462c0819:PsiDirectoryNode" />
               <item name="jmh" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -271,7 +241,7 @@
       </method>
     </configuration>
     <configuration name="LambdaOrMethodReference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.pricerunner.jmh.LambdaOrMethodReference" />
       <module name="jmh" />
@@ -335,12 +305,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550131010408</updated>
-      <workItem from="1550131014382" duration="6443000" />
+      <workItem from="1550131014382" duration="7348000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6443000" />
+    <option name="totallyTimeSpent" value="7348000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1146" y="23" width="2294" height="1417" extended-state="0" />
@@ -348,7 +318,7 @@
     <layout>
       <window_info id="Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19271758" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19271758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Run with VisualVM" />
       <window_info anchor="bottom" id="Docker" />
@@ -362,7 +332,7 @@
       <window_info anchor="bottom" id="Statistic" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32872504" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32872504" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -405,18 +375,34 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/pricerunner/jmh/For.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#2364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/com/pricerunner/jmh/LambdaOrMethodReference.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pricerunner/jmh/LambdaOrMethodReference.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="53" column="49" lean-forward="true" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+        <state relative-caret-position="735">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
