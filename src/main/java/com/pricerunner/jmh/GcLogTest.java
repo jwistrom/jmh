@@ -2,10 +2,12 @@ package com.pricerunner.jmh;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Fork;
+import org.openjdk.jmh.annotations.Measurement;
 import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.OutputTimeUnit;
 import org.openjdk.jmh.annotations.Param;
@@ -21,12 +23,12 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @State(Scope.Benchmark)
-@Fork(value = 1, jvmArgs = {"-XX:CompileThreshold=50000", "-XX:+UnlockDiagnosticVMOptions", "-XX:+PrintAssembly", "-XX:+LogCompilation", "-XX:+TraceClassLoading"})
-@Warmup(iterations = 2)
-public class For {
+@Fork(value = 1, jvmArgs = {"-XX:CompileThreshold=5000", "-XX:+PrintGCDetails", "-Xloggc:/Users/johanwistrom/tmp/test-gc_%p.log"})
+@Warmup(iterations = 1)
+@Measurement(iterations = 1)
+public class GcLogTest {
 
-//    @Param({"10000", "100000", "1000000"})
-    @Param({"1000000"})
+    @Param({"100", "10000"})
     private int n;
 
     private List<Integer> data;
@@ -37,36 +39,15 @@ public class For {
     }
 
     @Benchmark
-    public void sumByStream(final Blackhole blackhole){
-        int sum = data.stream().mapToInt(i -> i).sum();
-        blackhole.consume(sum);
+    public void streamWithMethodReference(final Blackhole blackhole){
+        int max = data.stream().mapToInt(i -> i).reduce(Integer.MIN_VALUE, Integer::max);
+        blackhole.consume(max);
     }
 
-    @Benchmark
-    public void sumByForLoop(final Blackhole blackhole){
-        int sum = 0;
-        for (int i=0 ; i<data.size() ; i++){
-            sum += data.get(i);
-        }
-        blackhole.consume(sum);
-    }
-
-    @Benchmark
-    public void sumByWhile(final Blackhole blackhole){
-        int sum = 0;
-        int i = 0;
-
-        while (i<data.size()){
-            sum += data.get(i);
-            i++;
-        }
-
-        blackhole.consume(sum);
-    }
 
     public static void main(String[] args) throws Exception {
         final Options opt = new OptionsBuilder()
-            .include(For.class.getSimpleName())
+            .include(GcLogTest.class.getSimpleName())
             .build();
 
         new Runner(opt).run();
@@ -75,9 +56,10 @@ public class For {
 
 
     private List<Integer> createData() {
+        final Random random = new Random();
         final List<Integer> data = new ArrayList<>();
         for (int i=0 ; i<n ; i++){
-            data.add(i);
+            data.add(random.nextInt(n));
         }
         return data;
     }

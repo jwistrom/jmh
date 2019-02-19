@@ -5,3 +5,5 @@
 ### maven
 **/target/
 **/.flattened-pom.xml
+
+**/*.log
