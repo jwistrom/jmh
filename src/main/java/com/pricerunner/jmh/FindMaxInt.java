@@ -24,7 +24,7 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @State(Scope.Benchmark)
-@Fork(value = 1, jvmArgs = {"-XX:CompileThreshold=5000", "-XX:+UnlockDiagnosticVMOptions", "-XX:+LogCompilation", "-XX:+TraceClassLoading", "-XX:+PrintInlining"})
+@Fork(value = 1, jvmArgs = {"-XX:CompileThreshold=5000", "-XX:+UnlockDiagnosticVMOptions", "-XX:+LogCompilation", "-XX:+TraceClassLoading", "-XX:+PrintInlining", "-XX:MaxInlineLevel=20"})
 @Warmup(iterations = 2)
 public class FindMaxInt {
 
@@ -37,13 +37,13 @@ public class FindMaxInt {
     public void setup(){
         data = createData();
     }
-//
-//    @Benchmark
-//    @CompilerControl(CompilerControl.Mode.DONT_INLINE)
-//    public void streamWithMethodReference(final Blackhole blackhole){
-//        int max = data.stream().mapToInt(i -> i).reduce(Integer.MIN_VALUE, Integer::max);
-//        blackhole.consume(max);
-//    }
+
+    @Benchmark
+    @CompilerControl(CompilerControl.Mode.DONT_INLINE)
+    public void streamWithMethodReference(final Blackhole blackhole){
+        int max = data.stream().mapToInt(i -> i).reduce(Integer.MIN_VALUE, Integer::max);
+        blackhole.consume(max);
+    }
 
 //    @Benchmark
 //    public void forLoop(final Blackhole blackhole){
@@ -57,7 +57,7 @@ public class FindMaxInt {
     @Benchmark
     @CompilerControl(CompilerControl.Mode.DONT_INLINE)
     public void streamWithLambda(final Blackhole blackhole){
-        int max = data.stream().mapToInt(i -> i).reduce(Integer.MIN_VALUE, (i1, i2) -> Integer.max(i1, i2));
+        int max = data.stream().mapToInt(i -> i).reduce(Integer.MIN_VALUE, (i1, i2) -> {throw new IllegalArgumentException("Gotcha");});
         blackhole.consume(max);
     }
 
@@ -67,23 +67,23 @@ public class FindMaxInt {
 //        blackhole.consume(max);
 //    }
 
-//    public static void main(String[] args) {
-//        FindMaxInt findMaxInt = new FindMaxInt();
-//        findMaxInt.n = 100000000;
-//        findMaxInt.setup();
-//
-//        Blackhole blackhole = new Blackhole("Today's password is swordfish. I understand instantiating Blackholes directly is dangerous.");
-//        findMaxInt.streamWithLambda(blackhole);
-//    }
+    public static void main(String[] args) {
+        FindMaxInt findMaxInt = new FindMaxInt();
+        findMaxInt.n = 100000000;
+        findMaxInt.setup();
 
-
-    public static void main(String[] args) throws Exception {
-        final Options opt = new OptionsBuilder()
-            .include(FindMaxInt.class.getSimpleName())
-            .build();
-
-        new Runner(opt).run();
+        Blackhole blackhole = new Blackhole("Today's password is swordfish. I understand instantiating Blackholes directly is dangerous.");
+        findMaxInt.streamWithLambda(blackhole);
     }
+
+
+//    public static void main(String[] args) throws Exception {
+//        final Options opt = new OptionsBuilder()
+//            .include(FindMaxInt.class.getSimpleName())
+//            .build();
+//
+//        new Runner(opt).run();
+//    }
 
 
 
